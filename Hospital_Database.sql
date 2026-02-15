@@ -16,6 +16,14 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Current Database: `Hospital_Database`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `Hospital_Database` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+USE `Hospital_Database`;
+
+--
 -- Table structure for table `Doctors`
 --
 
@@ -28,7 +36,7 @@ CREATE TABLE `Doctors` (
   `Doctor_DoB` date NOT NULL,
   `Doctor_Address` varchar(250) NOT NULL,
   `Doctor_Role` varchar(100) NOT NULL,
-  `Hospital_ID` int unsigned DEFAULT NULL,
+  `Hospital_ID` int unsigned NOT NULL,
   PRIMARY KEY (`Doctor_ID`),
   KEY `Hospital_ID` (`Hospital_ID`),
   CONSTRAINT `Doctors_ibfk_1` FOREIGN KEY (`Hospital_ID`) REFERENCES `Hospitals` (`Hospital_ID`)
@@ -86,7 +94,7 @@ CREATE TABLE `Patients` (
   `Patient_DoB` date NOT NULL,
   `Patient_Address` varchar(250) NOT NULL,
   `Patient_Role` varchar(100) NOT NULL,
-  `Doctor_ID` int unsigned DEFAULT NULL,
+  `Doctor_ID` int unsigned NOT NULL,
   PRIMARY KEY (`Patient_ID`),
   KEY `Doctor_ID` (`Doctor_ID`),
   CONSTRAINT `Patients_ibfk_1` FOREIGN KEY (`Doctor_ID`) REFERENCES `Doctors` (`Doctor_ID`)
@@ -151,4 +159,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-02-13 19:33:49
+-- Dump completed on 2026-02-15 21:00:00
