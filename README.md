@@ -9,7 +9,9 @@ Repository contents
 -Hospital_Database.sql #MySQL database export containing all tables and data.
 -ERD_Diagram.png #Entity Relationship Diagram showing tables, fields, and relationships.
 -README.md #This file describres the project and the repository contents.
--Flowchart_RegisterNewPatient.png #This flowchart models the process of registering a new patient's details and inserting the record into the database with foreign key constraint enforcement.
+-Flowchart_RegisterNewPatient.png #This flowchart models the process of registering a new patient and inserting the record into the database with foreign key constraint enforcement.
+-queries.sql #This files containts the query for registering a new patient, including being registered with one of the doctors. 
+
 
 Database structure:
 1) Hospitals table that stores information about hospitals. Each record is uniquely identified by a primary key Hospital_ID. Additional attributes include Hospital's Name, Address, Number of Beds, Type, and Accreditation Status.
