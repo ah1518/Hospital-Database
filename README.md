@@ -9,8 +9,7 @@ Repository contents
 -Hospital_Database.sql #MySQL database export containing all tables and data.
 -ERD_Diagram.png #Entity Relationship Diagram showing tables, fields, and relationships.
 -README.md #This file describres the project and the repository contents.
--Flowchart_RegisterNewPatient.png #This flowchart models the process of registering a new patient and inserting the record into the database with foreign key constraint enforcement.
--Flowchart_Print the list of doctors of a particula hospital.png #This flowchart models the process of identifying a particular hospital by name or Hospital_ID and returning the list of doctors associated to it.
+-Flowcharts.queries #This is a subrepository that contains .png files and images that are used for planning: flowcharts for the queries and ERD for database design.
 -queries.sql #This files containts the query for: 1)Registering a new patient, including being registered with one of the doctors; 2) Printing the list of doctors of a particular hospital. 
 
 
