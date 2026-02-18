@@ -59,3 +59,12 @@ WHERE d.Doctor_Name='name';
 
 ======================================================================================================================================================================================================================================================================================================
 
+-Query 4: Print a list of all prescriptions for a particular patient, ordered by the prescription date.
+SELECT *
+FROM Prescriptions
+WHERE Patient_ID=?
+ORDER BY Prescription_Date DESC;
+
+--This query retrieves all prescriptions for a specific patient, ordered by prescription date in descending order (newest to oldest). In medical context is more relevant to know the newest medication, or the current treatment status. Patient_ID is required as an input, given the context that in real world data might exist dublicates of names (and also dates of birth). Patient_ID is a foreign key in Prescriptions table, referencing Patient_ID in Patients table.
+
+=============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================

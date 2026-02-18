@@ -10,7 +10,7 @@ Repository contents
 -ERD_Diagram.png #Entity Relationship Diagram showing tables, fields, and relationships.
 -README.md #This file describres the project and the repository contents.
 -Flowcharts.queries #This is a subrepository that contains .png files and images that are used for planning: flowcharts for the queries and ERD for database design.
--queries.sql #This files containts the query for: 1)Registering a new patient, including being registered with one of the doctors; 2) Printing the list of doctors of a particular hospital. 
+-queries.sql #This files containts the query for: 1)Registering a new patient, including being registered with one of the doctors; 2) Printing the list of doctors of a particular hospital. 3) Print the list of prescriptions a particular doctor has described. 4)Print a list of all prescriptions of a particular patient, ordered by prescription date.  
 
 
 Database structure:
