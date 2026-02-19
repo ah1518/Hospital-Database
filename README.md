@@ -15,7 +15,8 @@ Repository contents
               2) Printing the list of doctors of a particular hospital;
               3) Print the list of prescriptions a particular doctor has described;
               4) Print a list of all prescriptions of a particular patient, ordered by prescription date;
-              5) Identify which doctor has made the most prescriptions. 
+              5) Identify which doctor has made the most prescriptions;
+              6) Print a list of all doctors at the hospital with bigges size (number of beds).
 
 
 Database structure:

@@ -104,4 +104,21 @@ LIMIT 1;
 
 ===================================================================================================================================================================
 
--Query 6:
+-Query 6: Print a list of all doctors at the hospital with biggest size (number of beds).
+
+SELECT d.Doctor_ID, d.Doctor_Name
+FROM Doctors d
+JOIN Hospitals h
+ ON d.Hospital_ID=h.Hospital_ID
+WHERE h.Hospital_Size=(
+ SELECT MAX(Hospital_Size)
+ FROM Hospitals
+);
+
+--This query lists the doctors who are part of the hospital with the biggest size, by using a subquery to identify the hospital with the highest number of beds.
+  The Hospital_ID is a PK in Hospitals table and a FK in Doctors table, establishing the relationship between the two tables.
+  Then join is performed in this attribute to combine doctors and hospital records. The query restricts the output to the hospital with the biggest size, so only the doctors affiliated with it, are returned. 
+
+=================================================================================================================================================================
+
+  
