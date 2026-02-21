@@ -1,5 +1,4 @@
-# Hospital-Database
-Hospital Database Project
+# Hospital Database Project
 
 ## I. Project overview
 
